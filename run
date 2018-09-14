@@ -1,0 +1,13 @@
+
+if [ -f "test.exe" ]; then
+echo "exe文件存在"
+rm -f test.exe
+echo "已经删除"
+else
+echo "exe文件不存在"
+fi
+
+gcc  function1.cpp main.cpp -o test.exe
+
+
+
