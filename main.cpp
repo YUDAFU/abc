@@ -17,9 +17,6 @@ int main()
 	printf("%p\n", test_data1++);
 	printf("%p\n", test_data1++);
 
-	func_get();
-	func_pop();
-	
 	int test_data2 = 30;
 	int *ptr_data = &test_data2;
 	printf("%p %u %d\n", ptr_data++, ptr_data, *ptr_data);
@@ -34,6 +31,13 @@ int main()
 	printf("%p %u %d\n", ptr_data1++, ptr_data1, *ptr_data1);
 	printf("%p %u %d\n", ptr_data1++, ptr_data1, *ptr_data1);
 
+	int i = 0;
+	for(i = 0; i <= 9; i++){
+		func_configure();
+	}
+	func_get();
+	func_pop();
+	
 	return 0;
 }
 
